@@ -1876,7 +1876,7 @@ ul {
     top: -100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #fff; /* Header Bar Color */
     z-index: 99;
 }
 
@@ -2390,7 +2390,7 @@ ul {
 }
 
 .bg-gray {
-    background-color: #f5f5f5;
+    background-color: #f5f5f5;  /*Grey Backgroundd*/
 }
 
 
