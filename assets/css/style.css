@@ -170,10 +170,26 @@ nav ul a:hover {
 
 .exp-item {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 160px 1fr;
   gap: 0 24px;
   padding: 24px 0;
   border-bottom: 1px solid var(--border);
+}
+
+.exp-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 3px;
+  background: #fff;
 }
 
 .exp-item:first-child {
@@ -239,7 +255,13 @@ footer p {
 
   .exp-item {
     grid-template-columns: 1fr;
-    gap: 4px 0;
+    gap: 8px 0;
+  }
+
+  .exp-left {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
   }
 
   nav ul {
