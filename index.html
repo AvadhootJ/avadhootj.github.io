@@ -60,11 +60,12 @@
             <p class="tl-dates">Apr 2025 – Present</p>
             <div class="tl-expand">
               <ul class="tl-bullets">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</li>
-                <li>Purus sit amet volutpat consequat mauris nunc congue nisi vitae.</li>
+                <li>Built and maintained the report generation platform used across all of Gusto: payroll, benefits, hours, bonuses, and overtime.</li>
+                <li>Led migration to ClickHouse (OLAP), improving analytical query performance by 10x.</li>
+                <li>Built real-time data pipelines to keep reporting infrastructure fast and always in sync.</li>
               </ul>
               <div class="tl-skills">
-                <span>Ruby on Rails</span><span>React</span><span>PostgreSQL</span>
+                <span>Ruby on Rails</span><span>React</span><span>Kafka</span><span>ClickHouse</span><span>PostgreSQL</span>
               </div>
             </div>
             <div class="tl-hint">&#9662;</div>
@@ -86,11 +87,12 @@
             <p class="tl-dates">Jul 2020 – Apr 2025</p>
             <div class="tl-expand">
               <ul class="tl-bullets">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</li>
-                <li>Purus sit amet volutpat consequat mauris nunc congue nisi vitae.</li>
+                <li>Designed and managed a data platform of 60+ ETL pipelines across varied data sources.</li>
+                <li>Delivered client projects across agriculture, telecom, manufacturing, and chemicals industries.</li>
+                <li>Built semantic search tooling that meaningfully improved how users find information.</li>
               </ul>
               <div class="tl-skills">
-                <span>Python</span><span>AWS</span><span>Terraform</span>
+                <span>Python</span><span>AWS</span><span>Terraform</span><span>Azure Databricks</span><span>Spark</span><span>Docker</span>
               </div>
             </div>
             <div class="tl-hint">&#9662;</div>
@@ -104,11 +106,11 @@
             <p class="tl-dates">Jun 2019 – Jul 2020</p>
             <div class="tl-expand">
               <ul class="tl-bullets">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</li>
-                <li>Purus sit amet volutpat consequat mauris nunc congue nisi vitae.</li>
+                <li>Built a BI metrics system integrated with Grafana dashboards on AWS.</li>
+                <li>Maintained cloud infrastructure and improved API reliability and test coverage for DISH's NB-IoT buildout, a precursor to 5G.</li>
               </ul>
               <div class="tl-skills">
-                <span>Python</span><span>AWS</span><span>Django</span>
+                <span>Python</span><span>Elasticsearch</span><span>AWS</span><span>React</span><span>Terraform</span>
               </div>
             </div>
             <div class="tl-hint">&#9662;</div>
@@ -130,11 +132,10 @@
             <p class="tl-dates">May 2018 – Aug 2018</p>
             <div class="tl-expand">
               <ul class="tl-bullets">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</li>
-                <li>Purus sit amet volutpat consequat mauris nunc congue nisi vitae.</li>
+                <li>Rearchitected a slow, manual data process into an automated system, cutting latency by 87%.</li>
               </ul>
               <div class="tl-skills">
-                <span>Java</span><span>Spring</span>
+                <span>Python</span>
               </div>
             </div>
             <div class="tl-hint">&#9662;</div>
@@ -148,8 +149,7 @@
             <p class="tl-dates">May 2017 – Aug 2017</p>
             <div class="tl-expand">
               <ul class="tl-bullets">
-                <li>Automated warranty claim system for track parts, saving considerable costs annually.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</li>
+                <li>Built an automated warranty ordering system for railway-track parts, replacing manual calls and emails.</li>
               </ul>
               <div class="tl-skills">
                 <span>Java</span><span>AngularJS</span><span>Activiti</span>
@@ -199,9 +199,17 @@
   </main>
 
   <script>
-    document.querySelectorAll('.tl-card').forEach(card => {
+    const cards = document.querySelectorAll('.tl-card');
+    cards.forEach(card => {
       card.addEventListener('click', () => {
-        card.classList.toggle('is-pinned');
+        const wasOpen = card.classList.contains('is-pinned');
+        cards.forEach(c => c.classList.remove('is-pinned'));
+        if (!wasOpen) {
+          card.classList.add('is-pinned');
+          if (window.innerWidth > 640) {
+            setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
+          }
+        }
       });
     });
   </script>
