@@ -11,7 +11,7 @@
   --border:  #e5e5e5;
   --text:    #111111;
   --muted:   #666666;
-  --accent:  #C1121F;
+  --accent:  #D64045;
   --font: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -119,6 +119,8 @@ nav ul a:hover {
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
 .btn-sm { padding: 6px 14px; font-size: 0.82rem; }
+.btn-github { background: #24292e; color: #fff; }
+.btn-linkedin { background: #0A66C2; color: #fff; }
 
 /* ===== Section label ===== */
 .section-label {
@@ -239,9 +241,9 @@ nav ul a:hover {
 .tl-hint {
   display: flex;
   justify-content: center;
-  margin-top: 4px;
+  margin-top: 2px;
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   animation: bounce 1.4s infinite;
   transition: transform 0.3s ease;
 }
