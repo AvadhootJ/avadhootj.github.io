@@ -48,7 +48,7 @@
     <section id="about">
       <div class="container">
         <p class="section-label">About</p>
-        <p>Software engineer with experience building products across fintech, consulting, and media. Currently at Gusto, previously at McKinsey &amp; Company and DISH Network.</p>
+        <p>Software engineer with <span id="yoe"></span> years of experience building data platforms, internal tools, and product infrastructure. I like hard problems involving moving a lot of data reliably, or making something slow suddenly fast. Currently at Gusto, working on the systems that power payroll reporting for millions of people.</p>
       </div>
     </section>
 
@@ -208,6 +208,11 @@
   </div>
 
   <script>
+    const start = new Date(2019, 4); // May 2019
+    const now = new Date();
+    const months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth()) + 6;
+    document.getElementById('yoe').textContent = Math.floor(months / 12) + '+';
+
     const resumeOverlay = document.getElementById('resume-overlay');
     document.getElementById('resume-btn').addEventListener('click', (e) => {
       e.preventDefault();
