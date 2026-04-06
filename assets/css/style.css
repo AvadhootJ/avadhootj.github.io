@@ -481,5 +481,7 @@ footer p { font-size: 0.82rem; color: var(--muted); }
 
   .tl-spacer { display: none; }
 
-  nav ul { gap: 16px; }
+  nav ul { gap: 12px; }
+  .btn-sm { padding: 5px 10px; font-size: 0.75rem; }
+  .nav-name { display: none; }
 }
