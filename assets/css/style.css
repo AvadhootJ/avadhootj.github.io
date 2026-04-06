@@ -12,6 +12,7 @@
   --text:    #111111;
   --muted:   #666666;
   --accent:  #D64045;
+  --nav-bg:  rgba(255, 255, 255, 0.92);
   --font: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -45,7 +46,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--nav-bg);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -197,6 +198,11 @@ nav ul a:hover {
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.tl-card:hover {
+  border-color: var(--muted);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 .tl-left .tl-card { margin-right: 24px; }
 .tl-right .tl-card { margin-left: 24px; }
 
@@ -332,50 +338,6 @@ nav ul a:hover {
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.8;
-  margin-bottom: 32px;
-}
-
-.contact-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.contact-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 20px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--text);
-  text-decoration: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  cursor: pointer;
-  background: var(--bg);
-}
-
-.contact-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  text-decoration: none;
-}
-
-.contact-card svg { color: var(--muted); flex-shrink: 0; }
-
-.contact-card-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 2px;
-}
-
-.contact-card-value {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text);
 }
 
 /* ===== Resume popup ===== */
