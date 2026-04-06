@@ -50,64 +50,119 @@
     <section id="experience">
       <div class="container">
         <p class="section-label">Experience</p>
-        <div class="exp-list">
+      </div>
+      <div class="timeline">
 
-          <div class="exp-item">
-            <div class="exp-left">
-              <img class="exp-logo" src="assets/img/logos/gusto.png" alt="Gusto">
-              <p class="exp-dates">Apr 2025 – Present</p>
+        <div class="tl-item tl-left">
+          <div class="tl-card">
+            <p class="tl-role">Senior Software Engineer</p>
+            <p class="tl-company">Gusto &middot; New York, NY</p>
+            <p class="tl-dates">Apr 2025 – Present</p>
+            <div class="tl-expand">
+              <ul class="tl-bullets">
+                <li>Built and maintained the report generation platform used across all of Gusto: payroll, benefits, hours, bonuses, and overtime.</li>
+                <li>Led migration to ClickHouse (OLAP), improving analytical query performance by 10x.</li>
+                <li>Built real-time data pipelines to keep reporting infrastructure fast and always in sync.</li>
+              </ul>
+              <div class="tl-skills">
+                <span>Ruby on Rails</span><span>React</span><span>Kafka</span><span>ClickHouse</span><span>PostgreSQL</span>
+              </div>
             </div>
-            <div>
-              <p class="exp-role">Senior Software Engineer</p>
-              <p class="exp-company">Gusto &middot; New York, NY</p>
-            </div>
+            <div class="tl-hint">&#9662;</div>
           </div>
-
-          <div class="exp-item">
-            <div class="exp-left">
-              <img class="exp-logo" src="assets/img/logos/mckinsey.png" alt="McKinsey & Company">
-              <p class="exp-dates">Jul 2020 – Apr 2025</p>
-            </div>
-            <div>
-              <p class="exp-role">Software Engineer</p>
-              <p class="exp-company">McKinsey &amp; Company &middot; Denver, CO</p>
-            </div>
+          <div class="tl-node">
+            <img src="assets/img/logos/gusto.png" alt="Gusto">
           </div>
-
-          <div class="exp-item">
-            <div class="exp-left">
-              <img class="exp-logo" src="assets/img/logos/dish.png" alt="DISH Network">
-              <p class="exp-dates">Jun 2019 – Jul 2020</p>
-            </div>
-            <div>
-              <p class="exp-role">Software Engineer</p>
-              <p class="exp-company">DISH Network &middot; Denver, CO</p>
-            </div>
-          </div>
-
-          <div class="exp-item">
-            <div class="exp-left">
-              <img class="exp-logo" src="assets/img/logos/hpe.png" alt="Hewlett Packard Enterprise">
-              <p class="exp-dates">May 2018 – Aug 2018</p>
-            </div>
-            <div>
-              <p class="exp-role">Software Engineer Intern</p>
-              <p class="exp-company">Hewlett Packard Enterprise &middot; San Jose, CA</p>
-            </div>
-          </div>
-
-          <div class="exp-item">
-            <div class="exp-left">
-              <img class="exp-logo" src="assets/img/logos/unionpacific.png" alt="Union Pacific Railroad">
-              <p class="exp-dates">May 2017 – Aug 2017</p>
-            </div>
-            <div>
-              <p class="exp-role">Application Development Intern</p>
-              <p class="exp-company">Union Pacific Railroad &middot; Omaha, NE</p>
-            </div>
-          </div>
-
+          <div class="tl-spacer"></div>
         </div>
+
+        <div class="tl-item tl-right">
+          <div class="tl-spacer"></div>
+          <div class="tl-node">
+            <img src="assets/img/logos/mckinsey.png" alt="McKinsey">
+          </div>
+          <div class="tl-card">
+            <p class="tl-role">Software Engineer</p>
+            <p class="tl-company">McKinsey &amp; Company &middot; Denver, CO</p>
+            <p class="tl-dates">Jul 2020 – Apr 2025</p>
+            <div class="tl-expand">
+              <ul class="tl-bullets">
+                <li>Designed and managed a data platform of 60+ ETL pipelines across varied data sources.</li>
+                <li>Delivered client projects across agriculture, telecom, manufacturing, and chemicals industries.</li>
+                <li>Built semantic search tooling that meaningfully improved how users find information.</li>
+              </ul>
+              <div class="tl-skills">
+                <span>Python</span><span>AWS</span><span>Terraform</span><span>Azure Databricks</span><span>Spark</span><span>Docker</span>
+              </div>
+            </div>
+            <div class="tl-hint">&#9662;</div>
+          </div>
+        </div>
+
+        <div class="tl-item tl-left">
+          <div class="tl-card">
+            <p class="tl-role">Software Engineer</p>
+            <p class="tl-company">DISH Network &middot; Denver, CO</p>
+            <p class="tl-dates">Jun 2019 – Jul 2020</p>
+            <div class="tl-expand">
+              <ul class="tl-bullets">
+                <li>Built a BI metrics system integrated with Grafana dashboards on AWS.</li>
+                <li>Maintained cloud infrastructure and improved API reliability and test coverage for DISH's NB-IoT buildout, a precursor to 5G.</li>
+              </ul>
+              <div class="tl-skills">
+                <span>Python</span><span>Elasticsearch</span><span>AWS</span><span>React</span><span>Terraform</span>
+              </div>
+            </div>
+            <div class="tl-hint">&#9662;</div>
+          </div>
+          <div class="tl-node">
+            <img src="assets/img/logos/dish.png" alt="DISH Network">
+          </div>
+          <div class="tl-spacer"></div>
+        </div>
+
+        <div class="tl-item tl-right">
+          <div class="tl-spacer"></div>
+          <div class="tl-node">
+            <img src="assets/img/logos/hpe.png" alt="HPE">
+          </div>
+          <div class="tl-card">
+            <p class="tl-role">Software Engineer Intern</p>
+            <p class="tl-company">Hewlett Packard Enterprise &middot; San Jose, CA</p>
+            <p class="tl-dates">May 2018 – Aug 2018</p>
+            <div class="tl-expand">
+              <ul class="tl-bullets">
+                <li>Rearchitected a slow, manual data process into an automated system, cutting latency by 87%.</li>
+              </ul>
+              <div class="tl-skills">
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="tl-hint">&#9662;</div>
+          </div>
+        </div>
+
+        <div class="tl-item tl-left">
+          <div class="tl-card">
+            <p class="tl-role">Application Development Intern</p>
+            <p class="tl-company">Union Pacific Railroad &middot; Omaha, NE</p>
+            <p class="tl-dates">May 2017 – Aug 2017</p>
+            <div class="tl-expand">
+              <ul class="tl-bullets">
+                <li>Built an automated warranty ordering system for railway-track parts, replacing manual calls and emails.</li>
+              </ul>
+              <div class="tl-skills">
+                <span>Java</span><span>AngularJS</span><span>Activiti</span>
+              </div>
+            </div>
+            <div class="tl-hint">&#9662;</div>
+          </div>
+          <div class="tl-node">
+            <img src="assets/img/logos/unionpacific.png" alt="Union Pacific">
+          </div>
+          <div class="tl-spacer"></div>
+        </div>
+
       </div>
     </section>
 
@@ -142,6 +197,22 @@
     </section>
 
   </main>
+
+  <script>
+    const cards = document.querySelectorAll('.tl-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const wasOpen = card.classList.contains('is-pinned');
+        cards.forEach(c => c.classList.remove('is-pinned'));
+        if (!wasOpen) {
+          card.classList.add('is-pinned');
+          if (window.innerWidth > 640) {
+            setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
+          }
+        }
+      });
+    });
+  </script>
 
   <footer>
     <div class="container">
